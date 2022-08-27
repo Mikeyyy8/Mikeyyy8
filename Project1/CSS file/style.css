@@ -1,0 +1,151 @@
+@import url(../fonts/cera-round-pro-free-font/Demo_fonts/Fontspring-DEMO-ceraroundpro-medium.otf);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+body .navbar .links, body .navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Poppins, Fontspring-DEMO-ceraroundpro-medium;
+  font-size: 16px;
+  background: #ffffff;
+  color: #222121;
+}
+body .navbar {
+  display: flex;
+  background: #f7f7f7;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 10;
+  position: relative;
+}
+body .navbar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  color: #222121;
+  margin-left: 24px;
+  font-weight: bolder;
+  font-size: 2rem;
+  cursor: pointer;
+}
+body .navbar .logo .image {
+  font-size: 2.1rem;
+}
+body .navbar .logo .image a {
+  text-decoration: none;
+  color: #222121;
+}
+body .navbar .logo .image :hover {
+  color: #0da9dd;
+  transition: all 0.3s;
+}
+body .navbar .logo .text {
+  font-size: 30px;
+  padding-left: 5px;
+}
+body .navbar .links {
+  margin-right: 24px;
+  text-align: center;
+}
+body .navbar .links a {
+  text-decoration: none;
+  padding: 1rem;
+  justify-content: center;
+  color: #222121;
+}
+body .navbar .links a:hover {
+  color: #0da9dd;
+  transition: all 0.3s;
+}
+body .navbar .links #button {
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #046e8f;
+  margin-left: 16px;
+  color: #f7f7f7;
+}
+body .navbar .links #button:hover {
+  background: #0da9dd;
+  transition: all 0.3s ease;
+}
+body .hero {
+  display: flex;
+  background: #fff;
+  padding: 24px;
+}
+body .hero .left {
+  margin-top: 4em;
+  width: 100%;
+}
+body .hero .left h1 {
+  font-size: 4rem;
+  color: #222121;
+}
+body .hero .left h2 {
+  font-size: 2rem;
+  color: #0da9dd;
+}
+body .hero .left p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.2em;
+  color: #222121;
+}
+body .hero .left .btn {
+  font-size: 1rem;
+  background-color: #046e8f;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 32px;
+  margin-top: 2rem;
+  color: #f7f7f7;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  outline: none;
+}
+body .hero .left .btn a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+body .hero .left .btn:hover {
+  background: #0da9dd;
+  transition: all 0.3s ease;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+}
+body footer .contact {
+  padding: 30px;
+}
+body footer .contact .info {
+  display: flex;
+  justify-content: center;
+}
+body footer .contact .info p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+body footer .contact .links {
+  display: flex;
+}
+body footer .contact .links a {
+  font-size: 2em;
+  color: #222121;
+  margin: 1em;
+}
+body footer .contact .links a :hover {
+  color: #0da9dd;
+  transform: rotateX(360deg);
+  transition: all 0.3s;
+}/*# sourceMappingURL=proj1.css.map */
