@@ -1,107 +1,164 @@
+@import url(../fonts/cera-round-pro-free-font/Demo_fonts/Fontspring-DEMO-ceraroundpro-medium.otf);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
-body .navbar .links, body .navbar .logo {
+.navbar .container .links .link, .navbar .container .links, .navbar .container .logo {
   display: flex;
   align-items: center;
 }
 
 * {
   padding: 0;
-  box-sizing: border-box;
   margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Fontspring-DEMO-ceraroundpro-medium;
 }
 
-body {
-  font-family: Poppins, serif;
-  font-size: 16px;
-  background: #ffffff;
-  color: #222121;
-}
-body .navbar {
-  display: flex;
+.navbar {
   background: #f7f7f7;
-  justify-content: space-between;
+}
+.navbar .container {
   height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc(100vw - 1200px)/2;
   z-index: 10;
   position: relative;
 }
-body .navbar .logo {
-  display: flex;
-  align-items: center;
-  justify-content: baseline;
+.navbar .container .logo {
   color: #222121;
-  margin-left: 24px;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 2rem;
   cursor: pointer;
+  margin-left: 24px;
 }
-body .navbar .logo .image {
-  font-size: 2.1rem;
-}
-body .navbar .logo .image a {
+.navbar .container .logo a {
   text-decoration: none;
   color: #222121;
 }
-body .navbar .logo .image :hover {
-  color: #0da9dd;
-  transition: all 0.3s;
-}
-body .navbar .logo .text {
-  font-size: 30px;
-  padding-left: 5px;
-}
-body .navbar .links {
-  margin-right: 24px;
+.navbar .container .links {
   text-align: center;
+  margin-right: 24px;
 }
-body .navbar .links a {
+.navbar .container .links:focus {
+  color: rgb(0, 153, 255);
+}
+@media screen and (max-width: 768px) {
+  .navbar .container .links {
+    display: none;
+  }
+}
+.navbar .container .links .link {
+  color: #222121;
+  justify-content: center;
   text-decoration: none;
   padding: 1rem;
-  justify-content: center;
+}
+.navbar .container .links .link:hover {
+  color: rgb(0, 153, 255);
+  transition: all 0.3s ease;
+}
+.navbar .container .bar {
+  opacity: 0;
+}
+.navbar .container .bar a {
+  list-style: none;
   color: #222121;
 }
-body .navbar .links a:hover {
-  color: #0da9dd;
+.navbar .container .bar a :hover {
+  color: rgb(0, 153, 255);
   transition: all 0.3s;
 }
-body .navbar .links #button {
+@media screen and (max-width: 768px) {
+  .navbar .container .bar {
+    color: #222121;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+.navbar .container #button {
   padding: 12px 24px;
   border: none;
   outline: none;
   border-radius: 4px;
-  background-color: #046e8f;
+  background-color: rgb(0, 153, 255);
   margin-left: 16px;
   color: #f7f7f7;
 }
-body .navbar .links #button:hover {
-  background: #0da9dd;
+.navbar .container #button:hover {
+  background: linear-gradient(45deg, rgb(0, 153, 255), purple);
   transition: all 0.3s ease;
 }
-body .hero {
-  display: flex;
-  background: #fff;
-  padding: 24px;
+
+.hero {
+  background: #ffffff;
 }
-body .hero .left {
-  margin-top: 4em;
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
   width: 100%;
+  max-width: 1200px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
-body .hero .left h1 {
-  font-size: 4rem;
+@media screen and (max-width: 768px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+.hero .container .info {
+  width: 100%;
+  line-height: 1.2;
+}
+.hero .container .info h1 {
+  font-size: 4em;
   color: #222121;
 }
-body .hero .left h2 {
-  font-size: 2rem;
-  color: #0da9dd;
+@media screen and (max-width: 280px) {
+  .hero .container .info h1 {
+    font-size: 1.2em;
+  }
 }
-body .hero .left p {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-top: 1.2em;
-  color: #222121;
+.hero .container .info h2 {
+  font-size: 2em;
+  color: rgb(0, 153, 255);
 }
-body .hero .left .btn {
+@media screen and (max-width: 280px) {
+  .hero .container .info h2 {
+    font-size: 2rem;
+  }
+}
+.hero .container .info p {
   font-size: 1rem;
-  background-color: #046e8f;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  color: #222121;
+}
+@media screen and (max-width: 280px) {
+  .hero .container .info p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero .container .info {
+    padding: 5rem 0;
+  }
+}
+@media screen and (max-width: 280px) {
+  .hero .container .info {
+    line-height: 1.5;
+  }
+}
+.hero .container .info .btn {
+  font-size: 1rem;
+  background-color: rgb(0, 153, 255);
   border: none;
   border-radius: 4px;
   padding: 14px 32px;
@@ -112,39 +169,53 @@ body .hero .left .btn {
   transition: all 0.3s;
   outline: none;
 }
-body .hero .left .btn a {
+.hero .container .info .btn a {
   text-decoration: none;
   color: #f7f7f7;
 }
-body .hero .left .btn:hover {
-  background: #0da9dd;
-  transition: all 0.3s ease;
+.hero .container .info .btn:hover {
+  background: linear-gradient(45deg, rgb(0, 153, 255), purple);
+  transition: all 0.5s ease;
 }
-body footer {
+.hero .container .right {
+  text-align: center;
+  justify-content: center;
+}
+.hero .container .right .img {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
   display: flex;
   justify-content: center;
 }
-body footer .contact {
-  padding: 30px;
+footer .contact {
+  padding-top: 30px;
 }
-body footer .contact .info {
+footer .contact .info {
   display: flex;
   justify-content: center;
 }
-body footer .contact .info p {
+footer .contact .info p {
   font-size: 1.1em;
   font-weight: bold;
 }
-body footer .contact .links {
+footer .contact .links {
   display: flex;
 }
-body footer .contact .links a {
+footer .contact .links a {
   font-size: 2em;
   color: #222121;
-  margin: 1em;
+  margin: 0.5em;
 }
-body footer .contact .links a :hover {
-  color: #0da9dd;
-  transform: rotateX(360deg);
+@media screen and (max-width: 280px) {
+  footer .contact .links a {
+    font-size: 1.4em;
+    margin: 0.1em;
+  }
+}
+footer .contact .links a :hover {
+  color: rgb(0, 153, 255);
   transition: all 0.3s;
-}/*# sourceMappingURL=proj1.css.map */
