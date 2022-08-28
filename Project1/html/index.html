@@ -1,42 +1,44 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://kit.fontawesome.com/645ab696af.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://github.com/Mikeyyy8/Mikeyyy8/blob/main/Project1/CSS%20file/style.css" type="text/css">
-    <title>Project 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/645ab696af.js" crossorigin="anonymous"></script>
+    <title><img src="/Images/cannabis.svg" alt="logo"> Sleep hub</title>
 </head>
 <body>
     <!-- Navbar Section -->
     <nav class="navbar">
-        <div class="logo">
-            <div class="image"><a href="./index.html"><i class="fa-solid fa-cannabis"></i></a></div>
-            <div class="text">Hub</div>
-        </div>
-        <div class="links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#contact">Contact</a>
-            <a href="#" class="btn" id="button">Sign up</a>
+        <div class="container">
+            <div class="logo"><a href="index.html"><i class="fa-solid fa-cannabis"></i></a> Hub</div>
+            <div class="bar">
+                <a href="javascript:void(0);" onclick="myFunction()" class="icon"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="links" id="links">
+                <a href="#" class="link">Home</a>
+                <a href="#" class="link">About</a>
+                <a href="#" class="link">Contact</a>
+                <a href="#" class="link" id="button">Sign up</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero section -->
     <div class="hero">
-        <div class="left">
-            <h1>Having Trouble Sleeping?</h1>
-            <h2>Sign up now</h2>
-            <p>To get some "Sleeping" Medicine.</p>
-            <button class="btn"><a href="#">Sign up</a></button>
-        </div>
-        <div class="right">
-            <div class="img"><img src="https://cdn.dribbble.com/users/1162077/screenshots/5414789/media/65f0bd2ded27af8416857e9d260c5e5a.gif" alt="image"></div>
+        <div class="container">
+            <div class="info">
+                <h1>Having Trouble Sleeping?</h1>
+                <h2>Sign up now</h2>
+                <p>To speak with a licensed Therapist.</p>
+                <button class="btn"><a href="#">Sign up</a></button>
+            </div>
+            <div class="right">
+                <img class="img" src="https://cdn.dribbble.com/users/1162077/screenshots/5414789/media/65f0bd2ded27af8416857e9d260c5e5a.gif" alt="grid"></div>
+            </div>
         </div>
     </div>
-
     <footer>
         <div class="contact" id="contact">
             <div class="info">
@@ -44,8 +46,9 @@
             </div>
             <div class="links">
                 <a href="#"><i class="fa-brands fa-discord"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/+2349070939863" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://web.facebook.com/profile.php?" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </div>
         </div>
     </footer>
