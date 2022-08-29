@@ -1,0 +1,108 @@
+@import url(../fonts/cera-round-pro-free-font/Demo_fonts/Fontspring-DEMO-ceraroundpro-medium.otf);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Fontspring-DEMO-ceraroundpro-medium;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+}
+body .container {
+  width: 400px;
+  max-width: 400px;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+body .container .form--hidden {
+  display: none;
+}
+body .container .form__title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+body .container .form > *:first-child {
+  margin-top: 0;
+}
+body .container .form > *:last-child {
+  margin-top: 0;
+}
+body .container .form__message {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+body .container .form__message--success {
+  color: rgb(21, 204, 21);
+}
+body .container .form__message--error {
+  color: red;
+}
+body .container .form__input-group {
+  margin-bottom: 1rem;
+}
+body .container .form__input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  outline: none;
+  background: rgb(248, 248, 248);
+  transition: background 0.2s, border-color 0.2s;
+}
+body .container .form__input:focus {
+  border-color: rgb(0, 153, 255);
+  background: #fff;
+}
+body .container .form__input--error {
+  color: red;
+  border-color: red;
+}
+body .container .form__input-error-message {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: red;
+}
+body .container .form__button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background: rgb(0, 153, 255);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+body .container .form__button:hover {
+  background: rgb(0, 120, 201);
+}
+body .container .form__button:active {
+  transform: scale(0.98);
+}
+body .container .form__text {
+  text-align: center;
+  margin-top: 0.5em;
+}
+body .container .form__link {
+  color: rgb(4, 0, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+body .container .form__link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=signup.css.map */
