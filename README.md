@@ -2,5 +2,3 @@
 
 Hello, my name is Glory Michael.
 You can reach me by email gmichael.ikponwosa@gmail.com.
-
-Fun Fact: I'm a guy.
