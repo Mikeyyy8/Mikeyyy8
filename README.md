@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 I'm MaiKo.
-I build mobile apps with React Native and Expo.
+I build software.  
 You can reach me by email mikeyyyy20@gmail.com.
 
 ## 🛠 Languages & Tools
